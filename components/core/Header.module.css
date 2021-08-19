@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  top: 0;
+  background-color: rgb(38, 68, 135);
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  margin-left: 20px;
+  font-size: 1.3rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar li {
+  color: #fff;
+  margin: 0px 15px;
+}
+.navbar a {
+  transition: all 300ms;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
