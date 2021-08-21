@@ -1,16 +1,13 @@
-import styles from './Header.module.css';
 import Link from "next/link";
+import styles from './styles.module.scss';
 
-export const Header = () => {
+export const OrHeader = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <ul>
           <li>
             <Link href="/"><a>Inicio</a></Link>
-          </li>
-          <li>
-          <Link href="/timeline"><a>Timeline</a></Link>
           </li>
         </ul>
       </nav>

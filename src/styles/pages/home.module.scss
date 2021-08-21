@@ -1,0 +1,14 @@
+.title {
+  background: linear-gradient(to right, $primary-color 25%, $secondary-color 75%);
+	-webkit-background-clip: text;
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.slogan {
+  font-weight: bold;
+}

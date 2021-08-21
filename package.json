@@ -1,17 +1,19 @@
 {
-  "name": "twittus",
-  "version": "0.1.0",
+  "name": "penboldt",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "doppler run -- next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^9.0.0-beta.8",
     "next": "11.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.38.0"
   },
   "devDependencies": {
     "@types/react": "17.0.18",
