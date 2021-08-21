@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import styles from '../../../styles/Core.module.css';
-import { Header } from "../Header";
-import { Footer } from '../Footer';
+import { OrHeader, OrFooter } from "../../organisms";
 import { ReactNode } from 'react';
+import styles from './styles.module.scss';
 
 export const AppLayout = ({ children }: { children: ReactNode}) => {
   return (
@@ -12,11 +11,13 @@ export const AppLayout = ({ children }: { children: ReactNode}) => {
       </Head>
 
       <div className={styles.container}>
-        <Header/>
-        <main className={styles.main}>
-          {children}
-        </main>
-        <Footer/>
+        <OrHeader/>
+        <div>
+          <main className={styles.main}>
+            {children}
+          </main>
+        </div>
+        <OrFooter/>
       </div>
     </>
   )

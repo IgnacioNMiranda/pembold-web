@@ -1,9 +1,12 @@
+$header_text_color: #fff;
+
 .header {
-  position: absolute;
-  top: 0;
-  background-color: rgb(38, 68, 135);
+  background-color: $primary-color;
   width: 100%;
+  height: 75px;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
@@ -17,7 +20,7 @@
   align-items: center;
 }
 .navbar li {
-  color: #fff;
+  color: $header_text_color;
   margin: 0px 15px;
 }
 .navbar a {
