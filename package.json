@@ -6,7 +6,9 @@
     "dev": "doppler run -- next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sb": "start-storybook -p 6006 --ci",
+    "build:sb": "build-storybook"
   },
   "dependencies": {
     "firebase": "^9.0.0-beta.8",
@@ -16,9 +18,21 @@
     "sass": "^1.38.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@storybook/addon-actions": "^6.4.0-alpha.33",
+    "@storybook/addon-essentials": "^6.4.0-alpha.33",
+    "@storybook/addon-links": "^6.4.0-alpha.33",
+    "@storybook/builder-webpack5": "^6.4.0-alpha.33",
+    "@storybook/manager-webpack5": "^6.4.0-alpha.33",
+    "@storybook/react": "^6.4.0-alpha.33",
     "@types/react": "17.0.18",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
-    "typescript": "4.3.5"
+    "sass-loader": "^12.1.0",
+    "styles-loader": "^3.0.0",
+    "typescript": "4.3.5",
+    "webpack": "^5.51.1"
   }
 }
