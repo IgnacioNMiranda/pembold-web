@@ -1,7 +1,7 @@
 import { ChangeEvent, Dispatch, SetStateAction } from 'react';
-import { CreateUserDTO } from '../../../dto';
+import { UserCredentialsDTO } from '../../../dto';
 
-type StateTypes = CreateUserDTO;
+type StateTypes = UserCredentialsDTO;
 
 export const handleInput = (state: StateTypes, setState: Dispatch<SetStateAction<StateTypes>>) => {
   return (event: ChangeEvent<HTMLInputElement>) => {

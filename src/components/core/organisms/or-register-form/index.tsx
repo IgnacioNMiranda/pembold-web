@@ -1,14 +1,14 @@
 import { FormEvent, useState } from 'react';
 import { AtInput } from '../../atoms';
 import { OrForm } from '../or-form';
-import { CreateUserDTO } from '../../../../dto';
+import { UserCredentialsDTO } from '../../../../dto';
 import { handleInput } from '../../../utils/helpers';
 import { authService } from '../../../../services';
 import { RedirectionTypes, useNavigation } from '../../../../hooks/useNavigation';
 import { useMutation } from 'react-query';
 import { localStorageUtil } from '../../../../utils/localStorage.util';
 
-const INITIAL_CREDENTIAL_STATE: CreateUserDTO = {
+const INITIAL_CREDENTIAL_STATE: UserCredentialsDTO = {
   email: '',
   password: '',
 };
