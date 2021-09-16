@@ -1,0 +1,26 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding: 9px;
+  margin: 10px 0;
+  width: 100%;
+  outline: 0;
+  transition: border 200ms linear;
+}
+.input:hover, .input:focus {
+  border: 1px solid $primary-color-light;
+}
+
+.showPasswordIcon {
+  position: absolute;
+  margin-top: 6%;
+  margin-right: 5px;
+  right: 0;
+}
