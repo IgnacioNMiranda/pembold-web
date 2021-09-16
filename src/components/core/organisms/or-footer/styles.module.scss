@@ -1,5 +1,3 @@
-$footer_text_color: #fff;
-
 .footer {
   width: 100%;
   height: 100px;
@@ -12,12 +10,7 @@ $footer_text_color: #fff;
 
 .footer p {
   text-align: center;
-  color: $footer_text_color;
+  color: $white;
   font-size: 20px;
   font-weight: bold;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }

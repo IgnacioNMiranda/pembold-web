@@ -1,24 +1,22 @@
 import Head from 'next/head';
-import { OrHeader, OrFooter } from "../../organisms";
+import { OrHeader, OrFooter } from '../../organisms';
 import { ReactNode } from 'react';
 import styles from './styles.module.scss';
 
-export const AppLayout = ({ children }: { children: ReactNode}) => {
+export const AppLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.container}>
-        <OrHeader/>
+        <OrHeader />
         <div>
-          <main className={styles.main}>
-            {children}
-          </main>
+          <main className={styles.main}>{children}</main>
         </div>
-        <OrFooter/>
+        <OrFooter />
       </div>
     </>
-  )
+  );
 };
