@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "doppler run -- next dev",
     "build": "next build",
-    "start": "doppler run -- next start",
+    "start": "next start",
     "lint": "next lint",
     "sb": "start-storybook -p 6006 --ci",
     "build:sb": "build-storybook"
@@ -28,12 +28,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@storybook/addon-actions": "^6.4.0-alpha.33",
-    "@storybook/addon-essentials": "^6.4.0-alpha.33",
-    "@storybook/addon-links": "^6.4.0-alpha.33",
-    "@storybook/builder-webpack5": "^6.4.0-alpha.33",
-    "@storybook/manager-webpack5": "^6.4.0-alpha.33",
-    "@storybook/react": "^6.4.0-alpha.33",
+    "@storybook/addon-actions": "6.4.0-alpha.33",
+    "@storybook/addon-essentials": "6.4.0-alpha.33",
+    "@storybook/addon-links": "6.4.0-alpha.33",
+    "@storybook/builder-webpack5": "6.4.0-alpha.33",
+    "@storybook/manager-webpack5": "6.4.0-alpha.33",
+    "@storybook/react": "6.4.0-alpha.33",
     "@types/react": "17.0.18",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
