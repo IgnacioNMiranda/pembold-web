@@ -1,0 +1,23 @@
+.menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  @media (min-width: $sm-width) {
+    display: none;
+  }
+}
+
+.bgAnimation {
+  animation: iconsBackground 300ms linear forwards;
+  border-radius: 999px;
+}
+@keyframes iconsBackground {
+  0% {
+    background-color: $secondary-color-dark;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

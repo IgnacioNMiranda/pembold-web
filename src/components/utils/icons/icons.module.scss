@@ -6,6 +6,8 @@
   height: auto;
   cursor: pointer;
   display: flex;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
 }
 .iconButton:focus {
   outline: 0;
