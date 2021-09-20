@@ -1,0 +1,21 @@
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.error {
+  color: rgb(255, 109, 109);
+  align-self: start;
+  font-weight: bold;
+}

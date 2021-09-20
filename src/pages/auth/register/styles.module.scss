@@ -1,0 +1,74 @@
+.logoContainer, .logo, .logoHead {
+  position: relative;
+}
+.logoContainer {
+  margin-bottom: 25px;
+}
+.logo {
+  z-index: 1;
+  display: none;
+}
+.logoHead {
+  z-index: 1;
+}
+.logoBg {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: $secondary-color;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+@media (min-width: $md-width) {
+  .logoBg {
+    width: 320px;
+    height: 320px;
+  }
+  .logo {
+    display: block;
+  }
+  .logoHead {
+    display: none;
+  }
+}
+
+.registerContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: $md-width) {
+  .registerContainer {
+    width: 500px;
+    padding: 0 10px;
+  }
+}
+
+.title {
+  color: $primary-color;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.divider {
+  color: $primary-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+
+  hr {
+    height: 0;
+    flex-grow: 1;
+    border: 1px solid $gray;
+  }
+
+  span {
+    margin: 0 10px;
+  }
+}
