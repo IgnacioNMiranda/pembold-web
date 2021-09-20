@@ -1,15 +1,25 @@
 .navbar {
-  margin-left: 20px;
   font-size: 1.3rem;
   justify-self: flex-start;
+  margin: 0;
+  @media (min-width: $sm-width) {
+    margin-left: 30px;
+  }
 }
 .navbar ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   & li {
     margin: 0px 15px;
+  }
+
+  @media (min-width: $sm-width) {
+    flex-direction: row;
   }
 }

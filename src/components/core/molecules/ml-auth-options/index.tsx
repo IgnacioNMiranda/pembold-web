@@ -1,6 +1,4 @@
-import { useStateDispatch } from '../../../../hooks';
-import { RedirectionTypes, useNavigation } from '../../../../hooks/useNavigation';
-import { useUser } from '../../../../hooks/useUser';
+import { RedirectionTypes, useNavigation, useUser, useStateDispatch } from '../../../../hooks';
 import { firebaseService } from '../../../../services';
 import { clearUser } from '../../../../store/user/userSlice';
 import { Loading } from '../../../utils/icons';
@@ -23,11 +21,15 @@ export const MlAuthOptions = () => {
       {user === undefined && <Loading />}
       {user === null && (
         <>
-          <AtLink href={RedirectionTypes.LOGIN} label="Login" type="tertiary" />
-          <AtLink href={RedirectionTypes.REGISTER} label="Sign up" type="tertiary" />
+          <AtLink href={RedirectionTypes.LOGIN} label="Login" color="tertiary" className="button scale" />
+          <AtLink href={RedirectionTypes.REGISTER} label="Sign up" color="tertiary" className="button scale" />
         </>
       )}
-      {user && <AtButton onClick={handleLogout}>Logout</AtButton>}
+      {user && (
+        <AtButton color="tertiary" onClick={handleLogout}>
+          Logout
+        </AtButton>
+      )}
     </div>
   );
 };

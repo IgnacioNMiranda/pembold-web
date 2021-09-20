@@ -6,9 +6,11 @@ const FirebaseErrors = {
 };
 
 export const getErrorMessage = (error: Error) => {
-  if ('request' in error && 'response' in error) {
+  if ('request' in error) {
     // is an AxiosError
-    return (error as AxiosError).response?.data.message;
+    const axiosError = error as AxiosError;
+
+    return axiosError.response ? axiosError.response.data.message : 'We are under maintenance, please try again later.';
   } else if ('code' in error && 'customData' in error) {
     // is a FirebaseError
     const code = (error as FirebaseError).code as keyof typeof FirebaseErrors;

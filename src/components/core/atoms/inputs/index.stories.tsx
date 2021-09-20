@@ -8,16 +8,19 @@ export default {
 
 const Template: Story<AtInputProps> = (args) => <AtInput {...args} />;
 
+export const Text = Template.bind({});
+Text.args = {
+  type: 'text',
+};
+
 export const Email = Template.bind({});
 Email.args = {
   type: 'email',
-  placeholder: 'Email',
   required: true,
 };
 
 export const Password = Template.bind({});
 Password.args = {
   type: 'password',
-  placeholder: 'Password',
   required: true,
 };

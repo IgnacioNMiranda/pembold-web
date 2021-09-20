@@ -1,6 +1,6 @@
 .logoContainer {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .logoHead {
   position: relative;
@@ -27,12 +27,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10px;
+  border: 1px solid $gray;
 }
-@media (min-width: $md-width) {
+@media (min-width: $sm-width) {
   .loginContainer {
-    width: 25%;
+    width: 450px;
   }
 }
 
@@ -56,7 +57,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .divider {

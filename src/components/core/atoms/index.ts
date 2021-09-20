@@ -1,3 +1,3 @@
 export * from './at-button';
-export * from './at-input';
+export * from './inputs';
 export * from './at-link';

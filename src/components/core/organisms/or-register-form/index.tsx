@@ -4,9 +4,9 @@ import { OrForm } from '../or-form';
 import { UserCredentialsDTO } from '../../../../dto';
 import { handleInput } from '../../../utils/helpers';
 import { authService } from '../../../../services';
-import { RedirectionTypes, useNavigation } from '../../../../hooks/useNavigation';
+import { RedirectionTypes, useNavigation } from '../../../../hooks';
 import { useMutation } from 'react-query';
-import { localStorageUtil } from '../../../../utils/localStorage.util';
+import { localStorageUtil } from '../../../../utils';
 
 const INITIAL_CREDENTIAL_STATE: UserCredentialsDTO = {
   email: '',
@@ -29,20 +29,8 @@ export const OrRegisterForm = () => {
 
   return (
     <OrForm mutation={mutation} button={{ type: 'form', children: 'Sign up' }}>
-      <AtInput
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-        onChange={handleInput(credentials, setCredentials)}
-      />
-      <AtInput
-        type="password"
-        name="password"
-        placeholder="Password"
-        required
-        onChange={handleInput(credentials, setCredentials)}
-      />
+      <AtInput type="email" required onChange={handleInput(credentials, setCredentials)} />
+      <AtInput type="password" required onChange={handleInput(credentials, setCredentials)} />
     </OrForm>
   );
 };

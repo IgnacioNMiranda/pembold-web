@@ -3,7 +3,7 @@ import { OrHeader, OrFooter } from '../../organisms';
 import { ReactNode } from 'react';
 import styles from './styles.module.scss';
 
-export const AppLayout = ({ children }: { children: ReactNode }) => {
+export const TmApp = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Head>

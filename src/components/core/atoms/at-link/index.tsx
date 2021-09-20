@@ -1,29 +1,29 @@
 import { getClassesFromString } from '../../../utils/helpers';
 import Link from 'next/link';
 import styles from './styles.module.scss';
+import { Colors } from '../../../utils/colors';
 
 const atLinkTypes = {
-  default: styles.default,
   navigation: styles.navigation,
-  tertiary: styles.tertiary,
   big: styles.big,
 };
 
 export interface AtLinkProps {
   type?: keyof typeof atLinkTypes;
+  color?: Colors;
   href: string;
   label: string;
-  classes?: string;
+  className?: string;
 }
 
-export const AtLink = ({ type = 'default', href, label, classes }: AtLinkProps) => {
-  const extraClasses = getClassesFromString(classes, styles);
-
-  const className = `${styles.link} ${atLinkTypes[type]} ${extraClasses}`;
+export const AtLink = ({ type, color, href, label, className }: AtLinkProps) => {
+  const classes = `${styles.link} ${color ? styles[color] : styles.default} ${
+    type ? atLinkTypes[type] : ''
+  } ${getClassesFromString(className, styles)}`;
 
   return (
     <Link href={href}>
-      <a className={className}>{label}</a>
+      <a className={classes}>{label}</a>
     </Link>
   );
 };

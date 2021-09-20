@@ -1,4 +1,4 @@
-export const LogoHeadSvg = (props: React.SVGProps<SVGSVGElement>) => {
+export const LogoHeadIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg height={37.62} viewBox="0 0 282.051 200.648" width={46.272} xmlns="http://www.w3.org/2000/svg" {...props}>
       <path

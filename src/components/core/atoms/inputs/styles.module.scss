@@ -1,26 +1,16 @@
-.inputContainer {
-  position: relative;
-  width: 100%;
-}
-
 .input {
   position: relative;
-  border: 1px solid #ccc;
+  border: 1px solid $gray;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 9px;
   margin: 10px 0;
   width: 100%;
   outline: 0;
   transition: border 200ms linear;
+  display: flex;
+  align-items: center;
 }
 .input:hover, .input:focus {
   border: 1px solid $primary-color-light;
-}
-
-.showPasswordIcon {
-  position: absolute;
-  margin-top: 6%;
-  margin-right: 5px;
-  right: 0;
 }

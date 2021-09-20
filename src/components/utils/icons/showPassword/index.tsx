@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from '../icons.module.scss';
 
 export interface ShowPasswordIconProps {
   onClick: () => void;
