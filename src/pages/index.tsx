@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               Penboldt
               <LogoIcon height={96} width={96} />
             </h1>
-            <p className={styles.slogan}>Easily share dev experiences with yours 👨‍💻👩‍💻</p>
+            <p className={styles.slogan}>Easily share dev experiences with yours</p>
             <AtLink type="big" color="secondary" href={RedirectionTypes.REGISTER} label="Start now!" />
           </>
         )}
