@@ -1,0 +1,33 @@
+%bg-primary-light {
+  background-color: $primary-color-light;
+  color: $white;
+  &:hover {
+    background-color: $primary-color-dark;
+    color: $white;
+  }
+}
+
+%bg-secondary {
+  background-color: $secondary-color;
+  color: $white;
+  &:hover {
+    background-color: $secondary-color-dark;
+    color: $white;
+  }
+}
+
+%bg-tertiary {
+  background-color: $tertiary-color;
+  color: $primary-color;
+  &:hover {
+    background-color: $tertiary-color-dark;
+    color: $primary-color;
+  }
+}
+
+%bg-gray {
+  background-color: $gray;
+  &:hover {
+    background-color: $gray;
+  }
+}
