@@ -8,7 +8,7 @@ import { AtButton, AtLink } from '../../../components/core/atoms';
 import { OrRegisterForm } from '../../../components/core/organisms';
 import { RedirectionTypes, useNavigation } from '../../../hooks';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { handleGithubLogin } from '../handleGitHubLogin';
+import { handleGithubLogin } from '../../../utils';
 
 const RegisterPage: NextPage = () => {
   const { redirect } = useNavigation();

@@ -7,7 +7,7 @@ import { TmGuest } from '../../../components/core/templates';
 import { OrLoginForm } from '../../../components/core/organisms';
 import { LogoHeadIcon, GithubIcon } from '../../../components/utils/icons';
 import { RedirectionTypes, useNavigation } from '../../../hooks';
-import { handleGithubLogin } from '../handleGitHubLogin';
+import { handleGithubLogin } from '../../../utils';
 import styles from './styles.module.scss';
 
 const LoginPage: NextPage = () => {

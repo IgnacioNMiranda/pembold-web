@@ -1,6 +1,6 @@
-import { RedirectionTypes } from '../../hooks';
-import { authService } from '../../services';
-import { localStorageUtil } from '../../utils';
+import { RedirectionTypes } from '../hooks';
+import { authService } from '../services';
+import { localStorageUtil } from '.';
 
 export const handleGithubLogin = (redirect: (redirection: RedirectionTypes) => void) => async () => {
   const userCredentials = await authService.githubLogin();
