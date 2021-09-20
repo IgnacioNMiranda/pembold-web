@@ -1,7 +1,7 @@
 import { initializeApp, getApps } from 'firebase/app';
 import { getAuth, GithubAuthProvider, onAuthStateChanged, signInWithPopup, signInWithCustomToken } from 'firebase/auth';
 import { config } from '../config/development';
-import { localStorageUtil } from '../utils/localStorage.util';
+import { localStorageUtil } from '../utils';
 
 class FirebaseService {
   constructor() {

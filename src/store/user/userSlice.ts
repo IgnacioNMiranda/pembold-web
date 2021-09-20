@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { firebaseService } from '../../services';
-import { localStorageUtil } from '../../utils/localStorage.util';
+import { localStorageUtil } from '../../utils';
 
 interface UserState {
   localUser: string | unknown;
