@@ -1,0 +1,12 @@
+.iconButton {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+}
+.iconButton:focus {
+  outline: 0;
+}

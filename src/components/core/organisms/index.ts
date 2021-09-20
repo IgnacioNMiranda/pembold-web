@@ -1,4 +1,5 @@
-import { OrFooter } from "./OrFooter";
-import { OrHeader } from "./OrHeader";
-
-export { OrHeader, OrFooter };
+export * from './or-footer';
+export * from './or-form';
+export * from './or-header';
+export * from './or-login-form';
+export * from './or-register-form';

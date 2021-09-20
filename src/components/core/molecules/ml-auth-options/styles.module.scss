@@ -1,0 +1,12 @@
+.auth-options {
+  height: 75px;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    margin: 0px 10px;
+  }
+  @media (min-width: $sm-width) {
+    margin-right: 50px;
+  }
+}
